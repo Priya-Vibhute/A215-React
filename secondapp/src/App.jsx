@@ -10,6 +10,11 @@ import Effect1 from "./components/Effect1";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Product from "./components/Product";
+import Quote from "./components/Quote";
+import Uncontrolled from "./components/Uncontrolled";
+import Controlled from "./components/Controlled";
+import Form1 from "./components/Form1";
 
 const routes = createBrowserRouter([
   {
@@ -35,6 +40,26 @@ const routes = createBrowserRouter([
       {
         path: "register",
         element: <Register />,
+      },
+      {
+        path: "products",
+        element: <Product />,
+      },
+      {
+        path: "quotes",
+        element: <Quote />,
+      },
+      {
+        path: "uncontrolled",
+        element: <Uncontrolled />,
+      },
+      {
+        path: "controlled",
+        element: <Controlled />,
+      },
+      {
+        path: "form-handling-1",
+        element: <Form1 />,
       },
     ],
   },

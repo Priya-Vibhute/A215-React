@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -26,10 +27,23 @@ function Navbar() {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                Link
-              </a>
+              <Link class="nav-link" to={"/effect"}>
+                useEffect Example
+              </Link>
             </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to={"/products"}>
+                Products api
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to={"/quotes"}>
+                Quotes
+              </Link>
+            </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -43,9 +57,21 @@ function Navbar() {
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="#">
-                    Action
-                  </a>
+                  <Link class="dropdown-item" to={"/uncontrolled"}>
+                    Uncontrolled
+                  </Link>
+                </li>
+
+                <li>
+                  <Link class="dropdown-item" to={"/controlled"}>
+                    Controlled
+                  </Link>
+                </li>
+
+                <li>
+                  <Link class="dropdown-item" to={"/form-handling-1"}>
+                    Form Handling
+                  </Link>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
