@@ -21,14 +21,11 @@ function Form1() {
     e.preventDefault();
 
     let newErrors = {};
-    if (!formData.username)
-       newErrors.username = "username is required";
+    if (!formData.username) newErrors.username = "username is required";
 
-    if (!formData.password) 
-      newErrors.password = "password is required";
+    if (!formData.password) newErrors.password = "password is required";
 
-    if (!formData.age) 
-      newErrors.age = "age is required";
+    if (!formData.age) newErrors.age = "age is required";
 
     console.log(newErrors);
     setErrors(newErrors);

@@ -73,6 +73,25 @@ function Navbar() {
                     Form Handling
                   </Link>
                 </li>
+
+                <li>
+                  <Link class="dropdown-item" to={"/form-handling-2"}>
+                    Form Handling 2
+                  </Link>
+                </li>
+
+                <li>
+                  <Link class="dropdown-item" to={"/prop-drilling"}>
+                    Prop Drilling
+                  </Link>
+                </li>
+
+                <li>
+                  <Link class="dropdown-item" to={"/context-example"}>
+                    Context
+                  </Link>
+                </li>
+
                 <li>
                   <a class="dropdown-item" href="#">
                     Another action

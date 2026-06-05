@@ -15,6 +15,9 @@ import Quote from "./components/Quote";
 import Uncontrolled from "./components/Uncontrolled";
 import Controlled from "./components/Controlled";
 import Form1 from "./components/Form1";
+import Form2 from "./components/Form2";
+import A from "./components/A";
+import M from "./components/M";
 
 const routes = createBrowserRouter([
   {
@@ -61,7 +64,19 @@ const routes = createBrowserRouter([
         path: "form-handling-1",
         element: <Form1 />,
       },
-    ],
+      {
+        path: "form-handling-2",
+        element: <Form2 />,
+      },
+      {
+        path: "prop-drilling",
+        element: <A />,
+      },
+      {
+        path: "context-example",
+        element: <M />,
+      },
+    ], 
   },
 ]);
 
