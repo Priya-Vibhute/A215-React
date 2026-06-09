@@ -93,6 +93,24 @@ function Navbar() {
                 </li>
 
                 <li>
+                  <Link class="dropdown-item" to={"/memoization"}>
+                    memoization
+                  </Link>
+                </li>
+
+                <li>
+                  <Link class="dropdown-item" to={"/reducer-example"}>
+                    useReducer Hook
+                  </Link>
+                </li>
+
+                <li>
+                  <Link class="dropdown-item" to={"/reducer-example-2"}>
+                    useReducer Hook
+                  </Link>
+                </li>
+
+                <li>
                   <a class="dropdown-item" href="#">
                     Another action
                   </a>

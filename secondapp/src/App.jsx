@@ -18,6 +18,14 @@ import Form1 from "./components/Form1";
 import Form2 from "./components/Form2";
 import A from "./components/A";
 import M from "./components/M";
+import NotFound from "./components/NotFound";
+import ProductDetail from "./components/ProductDetail";
+import Books from "./components/Books";
+import AddBook from "./components/AddBook";
+import DeleteBook from "./components/DeleteBook";
+import Parent from "./components/Parent";
+import ReducerExample from "./components/ReducerExample";
+import ReducerExample2 from "./components/ReducerExample2";
 
 const routes = createBrowserRouter([
   {
@@ -76,7 +84,42 @@ const routes = createBrowserRouter([
         path: "context-example",
         element: <M />,
       },
-    ], 
+      {
+        path: "products/detail/:id",
+        element: <ProductDetail />,
+      },
+      {
+        path: "books",
+        element: <Books />,
+        children: [
+          {
+            path: "add-book",
+            element: <AddBook />,
+          },
+          {
+            path: "delete-book",
+            element: <DeleteBook />,
+          },
+        ],
+      },
+      {
+        path: "memoization",
+        element: <Parent />,
+      },
+      {
+        path: "reducer-example",
+        element: <ReducerExample />,
+      },
+
+      {
+        path: "reducer-example-2",
+        element: <ReducerExample2 />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
+    ],
   },
 ]);
 

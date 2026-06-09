@@ -22,8 +22,7 @@ function App() {
       <ArrayExample /> */}
 
       <Book id={101} name={"Java programming"} author={"ABC"} />
-      <Book id={102} name={"Python Essentials"} author={"PQR"} />
-      <Book id={103} name={"SQL"} author={"MNO"} />
+      
       <hr />
       <Employee id={101} name={"XYZ"} salary={50000} department={"IT"} />
       <Employee
